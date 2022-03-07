@@ -1,7 +1,7 @@
 # MVAaerbh
 Calculates the actual error rate (AER) for price and clusters of Boston houses.
 
-```
+```python
 import pandas as pd
 import numpy as np
 from scipy.cluster import hierarchy
