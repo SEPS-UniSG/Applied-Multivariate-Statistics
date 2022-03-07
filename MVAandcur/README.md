@@ -43,4 +43,4 @@ plt.title("Andrews curves (Bank data)")
 
 plt.show()
 ```
-![MVAandcur](/assets/images/MVAandcur_python.png)
+![MVAandcur](MVAandcur_python.png)
