@@ -2,6 +2,7 @@
 Computes boxplots for the length (X1 variable) of the genuine and forged banknotes from the Swiss bank data.
 
 ```python
+# works on pandas 1.5.2 and matplotlib 3.6.3
 import pandas as pd
 import matplotlib.pyplot as plt
 

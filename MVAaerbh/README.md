@@ -2,6 +2,7 @@
 Calculates the actual error rate (AER) for price and clusters of Boston houses.
 
 ```python
+# works on pandas 1.5.2, numpy 1.24.1 and scipy 1.10.0
 import pandas as pd
 import numpy as np
 from scipy.cluster import hierarchy

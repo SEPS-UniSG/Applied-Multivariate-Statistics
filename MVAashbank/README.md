@@ -2,6 +2,7 @@
 Computes the averaged shifted histogram for the diagonal of all Swiss bank notes.
 
 ```python
+# works on pandas 1.5.2, numpy 1.24.1 and matplotlib 3.6.3
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
