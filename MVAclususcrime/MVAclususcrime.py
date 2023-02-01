@@ -1,6 +1,6 @@
+# works on numpy 1.23.5 and pandas 1.5.2
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 data = pd.read_csv("uscrime_python.csv", index_col = 0)

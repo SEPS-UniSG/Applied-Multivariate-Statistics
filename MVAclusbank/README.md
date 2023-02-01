@@ -2,6 +2,7 @@
 Performs a PCA and a cluster analysis for 20 randomly chosen bank notes from the swiss bank notes dataset.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2, scipy 1.9.3 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

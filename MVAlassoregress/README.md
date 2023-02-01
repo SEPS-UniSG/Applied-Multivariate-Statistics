@@ -2,6 +2,7 @@
 Performs a standardized regression using the Lasso methodology. The estimates become nonzero at a point that means the variables enter the model equation  sequentially as the scaled shrinkage parameter increases. The Lasso technique results  in variable selection. Finally, the resulting Lasso estimates are plotted.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2, scikit-learn 1.2.0 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

@@ -2,6 +2,7 @@
 Computes the Chi-Square test statistics for the car data.
 
 ```python
+# works on numpy 1.23.5
 import numpy as np
 
 # Generating data (X3 vs X4)

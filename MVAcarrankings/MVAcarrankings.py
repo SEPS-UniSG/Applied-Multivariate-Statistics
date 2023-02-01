@@ -1,3 +1,4 @@
+# works on scikit-learn 1.2.0 and matplotlib 3.6.2
 from sklearn.isotonic import IsotonicRegression
 import matplotlib.pyplot as plt
 

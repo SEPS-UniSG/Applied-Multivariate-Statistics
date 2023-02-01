@@ -2,6 +2,7 @@
 Performs a Fisher discrimination analysis of the Swiss bank notes, computes the misclassification rates for the whole dataset and displays nonparametric density estimates of the projected data.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2, KDEpy 1.1.0 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

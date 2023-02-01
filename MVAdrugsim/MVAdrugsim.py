@@ -1,3 +1,4 @@
+# works on numpy 1.23.5 and pandas 1.5.2
 import pandas as pd
 import numpy as np
 

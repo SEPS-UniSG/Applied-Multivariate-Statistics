@@ -2,6 +2,7 @@
 Computes the Chi-Square test statistic for the Eye-Hair data.
 
 ```python
+# works on numpy 1.23.5
 import numpy as np
 
 # Generating data

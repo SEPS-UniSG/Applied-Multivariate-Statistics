@@ -2,6 +2,7 @@
 Computes the univariate densities of X4 and X5 of the genuine Swiss bank notes.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2, KDEpy 1.1.0 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 from KDEpy import FFTKDE
