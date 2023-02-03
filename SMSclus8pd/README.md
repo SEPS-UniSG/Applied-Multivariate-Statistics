@@ -2,6 +2,7 @@
 Employs the single linkage method using simple Euclidean distance and squared Euclidean distance matrices to perform a cluster analysis on an 8 points example. Three plots are generated. First plot shows the 8 points, second plot the dendrogram for squared Euclidean distance and single linkage while the third plot presents the dendrogram for Euclidean distance using single linkage algorithm.
 
 ```python
+# works on numpy 1.23.5, scipy 1.9.3 and matplotlib 3.6.2
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.cluster import hierarchy

@@ -2,6 +2,7 @@
 Performs a PCA for the Swiss bank notes and shows the first three principal components in two-dimensional scatterplots. Additionally, a screeplot of the eigenvalues is displayed.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

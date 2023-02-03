@@ -2,6 +2,7 @@
 Computes a two dimensional scatterplot of X4 vs. X5 (upper inner frame vs. lower) of the Swiss bank notes data.
 
 ```python
+# works on pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import matplotlib.pyplot as plt
 

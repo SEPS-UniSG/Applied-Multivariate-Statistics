@@ -2,6 +2,7 @@
 Performs a PCA for the rescaled Swiss bank notes. X1, X2, X3, X6 are taken in cm instead of mm. It shows the first three principal components in two-dimensional scatterplots. Additionally, a screeplot of the eigenvalues is displayed.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

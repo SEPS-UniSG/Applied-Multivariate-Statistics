@@ -1,3 +1,4 @@
+# works on numpy 1.23.5 and matplotlib 3.6.2
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -17,7 +18,7 @@ u = np.reshape(u, (6, 1))
 h = i - (1/6 * (u @ u.T))
 b = h @ a @ h
 e = np.linalg.eig(b)
-x = e[1] @ np.diag(e[0])**0.5
+x = e[1] @ (np.diag(e[0])**0.5)
 
 cities = ["Berlin", "Dresden", "Hamburg", "Koblenz", "Muenchen", "Rostock"]
 

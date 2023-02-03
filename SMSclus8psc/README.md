@@ -2,6 +2,7 @@
 Employs the spectral clustering algorithm on an 8 points example.
 
 ```python
+# works on numpy 1.23.5, scipy 1.9.3, scikit-learn 1.2.0 and matplotlib 3.6.2
 import numpy as np
 import scipy
 import random

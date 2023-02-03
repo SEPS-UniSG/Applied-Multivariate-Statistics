@@ -2,6 +2,7 @@
 Computes a two dimensional scatterplot of X5 vs. X6 (upper inner frame vs. diagonal) of the Swiss bank notes.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
