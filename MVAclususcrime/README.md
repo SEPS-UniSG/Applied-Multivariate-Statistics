@@ -2,9 +2,9 @@
 Interprets the 7 crime variables of the dataset as contingency table and computes the distance between the US states depending on these variables for building appropriate clusters.
 
 ```python
+# works on numpy 1.23.5 and pandas 1.5.2
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 data = pd.read_csv("uscrime_python.csv", index_col = 0)

@@ -2,6 +2,7 @@
 Displays graphically maximum likelihood discrimination rule (ML rule) for 2 normal distributed samples. The inner interval is the allocation set for N(1,0.25), the outer intervals are for observations from N(0,1)
 
 ```python
+# works on numpy 1.23.5, scipy 1.9.3 and matplotlib 3.6.2
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import norm

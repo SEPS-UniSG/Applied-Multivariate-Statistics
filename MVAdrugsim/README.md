@@ -2,6 +2,7 @@
 Produces a contingency table for the drug consumption data from Everitt and Dunn and calculates Jaccard, simple matching and Tanimoto proximity measures for cluster analysis.
 
 ```python
+# works on numpy 1.23.5 and pandas 1.5.2
 import pandas as pd
 import numpy as np
 

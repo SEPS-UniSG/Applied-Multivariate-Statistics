@@ -2,6 +2,7 @@
 Demonstrates maximum likelihood discrimination rule (ML rule) and calculates the apparent error rate for Swiss banknotes.
 
 ```python
+# works on pandas 1.5.2, numpy 1.24.1
 import pandas as pd
 import numpy as np
 

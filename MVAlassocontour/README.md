@@ -2,6 +2,7 @@
 Plots the Lasso solution under the least squares loss function. The contour plots of the quadratic form objective function are produced which are centered at the least squares solution (beta_1,beta_2)^t = (6,7)^t in the two-dimensional case for the case of both the non-orthonormal and orthonormal design. The tuning parameter s being equal to 4.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2, scipy 1.9.3 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 from scipy.stats import chi2

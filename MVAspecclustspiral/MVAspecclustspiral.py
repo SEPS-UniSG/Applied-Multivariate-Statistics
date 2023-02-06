@@ -1,3 +1,4 @@
+# works on numpy 1.23.5, scikit-learn 1.2.0 and matplotlib 3.6.2
 import numpy as np
 from sklearn.cluster import SpectralClustering
 import matplotlib.pyplot as plt

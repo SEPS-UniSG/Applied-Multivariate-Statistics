@@ -2,6 +2,7 @@
 Computes Andrew''s Curves for the observations 96-105 of the Swiss bank notes data. The order of the variables is 6,5,4,3,2,1.
 
 ```python
+# works on pandas 1.5.2, numpy 1.24.1 and matplotlib 3.6.3
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

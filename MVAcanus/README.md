@@ -2,6 +2,7 @@
 Performs a canonical correlation analysis for the US crime and US health data.
 
 ```python
+# works on pandas 1.5.2 and numpy 1.24.1
 import pandas as pd
 import numpy as np
 

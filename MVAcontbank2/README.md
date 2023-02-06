@@ -2,6 +2,7 @@
 Gives a contour plot of the kernel density estimate of variables X5 and X6 of the Swiss bank notes.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2, scipy 1.9.3 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

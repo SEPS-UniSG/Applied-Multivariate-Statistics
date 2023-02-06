@@ -2,6 +2,7 @@
 Employs the Ward method and complete linkage using squared Euclidean distance matrices to perform a cluster analysis on an 8 points example.
 
 ```python
+# works on numpy 1.23.5, scipy 1.9.3 and matplotlib 3.6.2
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.cluster import hierarchy

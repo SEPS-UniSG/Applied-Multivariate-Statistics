@@ -2,6 +2,7 @@
 Computes the map of the cities by application of multidimensional scaling.
 
 ```python
+# works on numpy 1.23.5 and matplotlib 3.6.2
 import numpy as np
 import matplotlib.pyplot as plt
 

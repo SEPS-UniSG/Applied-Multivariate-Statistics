@@ -2,6 +2,7 @@
 MVAspecclust computes the clusters for the exemplary data based on the Euclidean distance and predefined number of clusters.
 
 ```python
+# works on pandas 1.5.2, scikit-learn 1.2.0 and matplotlib 3.6.2
 import pandas as pd
 from sklearn.cluster import SpectralClustering
 import matplotlib.pyplot as plt

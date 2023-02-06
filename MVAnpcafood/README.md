@@ -2,6 +2,7 @@
 Performs a PCA for the standardized French food data and shows the first two principal components for the individuals and the variables. The normalization corresponds to that of Lebart/Morineau/Fenelon.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

@@ -3,6 +3,7 @@ Performs a canonical correlation analysis for the car marks data and shows a plo
 the first canonical variables.
 
 ```python
+# works on pandas 1.5.2, numpy 1.24.1 and matplotlib 3.6.3
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

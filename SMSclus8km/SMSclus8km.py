@@ -1,3 +1,4 @@
+# works on numpy 1.23.5, scikit-learn 1.2.0 and matplotlib 3.6.2
 import numpy as np
 import matplotlib.pyplot as plt
 import random
@@ -7,7 +8,7 @@ random.seed(100)
 
 eight = np.array(([-3, -2, -2, -2, 1, 1, 2, 4], [0, 4, -1, -2, 4, 2, -4, -3])).T
 eight = eight[[7,6,2,0,3,1,5,4], :]
-results = KMeans(n_clusters=2, random_state=100, algorithm = "full").fit(eight)
+results = KMeans(n_clusters=2, random_state=100, algorithm = "lloyd").fit(eight)
 
 fig, ax = plt.subplots(figsize = (10, 10))
 ax.scatter(results.cluster_centers_[0, 0], results.cluster_centers_[0, 1], 

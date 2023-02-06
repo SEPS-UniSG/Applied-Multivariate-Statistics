@@ -2,6 +2,7 @@
 Shows a screeplot of the eigenvalues for the PCA of the Swiss bank notes. It computes the correlations between the variables and the principal components and displays the first two of them.
 
 ```python
+# works on numpy 1.23.5, pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

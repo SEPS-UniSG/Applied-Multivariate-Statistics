@@ -1,3 +1,4 @@
+# works on numpy 1.23.5, pandas 1.5.2, scipy 1.9.3 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 from scipy.stats import chi2

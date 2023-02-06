@@ -1,3 +1,4 @@
+# works on numpy 1.23.5, pandas 1.5.2 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -61,10 +62,10 @@ ucircle = np.array([np.cos((np.arange(0, 361)/180)*np.pi),
 fig, ax = plt.subplots(figsize = (7, 7))
 ax.plot(ucircle[0], ucircle[1])
 
-ax.scatter(-z[:, 0], z[:, 1], c = "w")
+ax.scatter(z[:, 0], -z[:, 1], c = "w")
 label = ["bread", "vegetables", "fruits", "meat", "poultry", "milk", "wine"]
 for i in range(len(label)):
-    ax.text(-z[i, 0], z[i, 1], label[i], fontsize = 12)
+    ax.text(z[i, 0], -z[i, 1], label[i], fontsize = 12)
 
 ax.axvline(0, c = "k")
 ax.axhline(0, c = "k")

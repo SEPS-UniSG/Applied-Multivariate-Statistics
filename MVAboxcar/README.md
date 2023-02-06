@@ -2,6 +2,7 @@
 Computes the five-number summary and boxplots for the mileage (X14 variable) of US, Japanese and European cars.
 
 ```python
+# works on pandas 1.5.2, numpy 1.24.1 and matplotlib 3.6.3
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
