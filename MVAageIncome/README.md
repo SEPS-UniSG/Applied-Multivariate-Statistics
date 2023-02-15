@@ -1,3 +1,7 @@
+# MVAageIncome
+Produces a hexagon and a scatter plot between Age and Net income.
+
+```python
 #works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.6.2
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -38,3 +42,7 @@ cbar.ax.tick_params(labelsize=22)
 
 plt.show()
 
+
+```
+![MVAageIncome](MVAageIncome01_python.png)
+![MVAageIncome](MVAageIncome02_python.png)

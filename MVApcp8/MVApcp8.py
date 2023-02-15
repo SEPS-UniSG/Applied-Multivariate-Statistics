@@ -8,9 +8,9 @@ z2 = np.array([3, 2, 2, 1])
 n = 400
 
 x1 = np.linspace(1, 4, n)
-y1 = CubicSpline(np.arange(len(z1)), z1)(np.linspace(0, len(z1) - 1, n))
+y1 = CubicSpline(np.arange(len(z1)), z1)(np.linspace(0, 3, n))
 x2 = np.linspace(1, 4, n)
-y2 = CubicSpline(np.arange(len(z2)), z2)(np.linspace(0, len(z2) - 1, n))
+y2 = CubicSpline(np.arange(len(z2)), z2)(np.linspace(0, 3, n))
 
 fig, ax = plt.subplots(figsize = (12,10))
 
