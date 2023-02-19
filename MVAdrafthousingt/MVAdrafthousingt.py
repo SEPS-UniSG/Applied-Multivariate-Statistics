@@ -10,6 +10,8 @@ df.loc[df["name"] <= df["name"].median(), ["name"]] = 1
 df.loc[df["name"] > df["name"].median(), ["name"]] = 2
 df = df.loc[:,[1,2,3,4,5,14,"name"]]
 df.rename(columns={14: 6}, inplace= True)
+df[[1,3,5,6]] = np.log(df[[1,3,5,6]])
+df[2] = df[2]/10
 
 fig, axs = plt.subplots(6,6, figsize=(20,20))
 
