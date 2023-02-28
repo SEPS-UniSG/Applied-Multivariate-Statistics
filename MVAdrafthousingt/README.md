@@ -1,3 +1,8 @@
+# MVAdrafthousingt
+Plots the scatterplot matrix for the transformed Boston housing data variables X1,
+... , X5 and X14.
+
+```python
 #works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.6.2
 import pandas as pd
 import numpy as np
@@ -38,3 +43,6 @@ for i in range(6):
             
 fig.suptitle("Scatterplot matrix for Boston Housing", fontsize=50, y=0.92)
 plt.show()
+
+```
+![MVAdrafthousingt](MVAdrafthousingt_python.png)
