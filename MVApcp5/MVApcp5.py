@@ -12,12 +12,13 @@ for i in df.columns:
 
 df.rename(columns={4:"headroom", 5:"rear seat", 6:"trunk space"},
           inplace=True)
-df["name"] = "Parallel Coordinate Plot(Car Data)"
+df["name"] = "Parallel Coordinates Plot(Car Data)"
 
 fig, ax = plt.subplots(figsize = (12,10))
 
 parallel_coordinates(df, "name", color=("black"), linewidth ="0.9")
 plt.legend().set_visible(False)
 ax.tick_params(axis='both', labelsize=25)
-plt.title(label = "Parallel Coordinate Plot(Car Data)", 
+plt.title(label = "Parallel Coordinates Plot(Car Data)", 
           fontsize = 30, fontweight = "bold", pad = 15)
+plt.show()
