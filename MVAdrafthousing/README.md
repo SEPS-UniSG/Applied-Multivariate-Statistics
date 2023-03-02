@@ -43,4 +43,4 @@ for i in range(6):
 fig.suptitle("Scatterplot matrix for Boston Housing", fontsize=50, y=0.92)
 plt.show()
 ```
-![MVAdrafthousing](MVAdrafthousing_python.png)
+![MVAdrafthousing](MVAdrafthousing-python.png)
