@@ -48,4 +48,4 @@ fig.suptitle("Scatterplot matrix for Boston Housing", fontsize=50, y=0.92)
 plt.show()
 
 ```
-![MVAdrafthousingt](MVAdrafthousingt_python.png)
+![MVAdrafthousingt](MVAdrafthousingt-python.png)
