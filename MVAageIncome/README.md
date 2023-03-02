@@ -2,7 +2,7 @@
 Produces a hexagon and a scatter plot between Age and Net income.
 
 ```python
-#works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.6.2
+#works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.7.0
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -20,7 +20,7 @@ netincome = allbus1.iloc[:, 1]
 
 # Create scatter plot
 fig1 ,ax1 = plt.subplots(figsize=(12, 10))
-ax1.scatter(ages, netincome)
+ax1.scatter(ages, netincome, marker = "s", s = 10)
 ax1.set_title("Scatter plot", fontweight = 'bold', fontsize = 30, pad = 15)
 ax1.set_xlabel("Age", fontsize = 25)
 ax1.set_ylabel("Net income", fontsize = 25)
