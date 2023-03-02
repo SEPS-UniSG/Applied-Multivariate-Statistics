@@ -25,4 +25,4 @@ ax.grid(False)
 plt.show()
 
 ```
-![MVApcp7](MVApcp7_python.png)
+![MVApcp7](MVApcp7-python.png)
