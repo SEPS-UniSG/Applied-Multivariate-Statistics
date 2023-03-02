@@ -44,5 +44,5 @@ plt.show()
 
 
 ```
-![MVAageIncome](MVAageIncome01_python.png)
+![MVAageIncome](MVAageIncome01-python.png)
 ![MVAageIncome](MVAageIncome02_python.png)
