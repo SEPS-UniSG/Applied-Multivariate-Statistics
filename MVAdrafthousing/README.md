@@ -22,8 +22,10 @@ for i in range(6):
         if i == j:
             axs[i,j].boxplot([df.loc[df["name"] == 1,i+1], df.loc[df["name"] == 2,i+1]],
                              widths = 0.6, medianprops = dict(color="black",linewidth=1.8))
-            axs[i, j].plot([0.7, 1.3], [df.loc[df["name"] == 1, i+1].mean(), df.loc[df["name"] == 1, i+1].mean()], linestyle="dotted", linewidth=1.5, color="red")
-            axs[i, j].plot([1.7, 2.3], [df.loc[df["name"] == 1, i+1].mean(), df.loc[df["name"] == 1, i+1].mean()], linestyle="dotted", linewidth=1.5, color="red")
+            axs[i, j].plot([0.7, 1.3], [df.loc[df["name"] == 1, i+1].mean(), df.loc[df["name"] == 1, i+1].mean()], 
+                           linestyle="dotted", linewidth=1.5, color="red")
+            axs[i, j].plot([1.7, 2.3], [df.loc[df["name"] == 1, i+1].mean(), df.loc[df["name"] == 1, i+1].mean()], 
+                           linestyle="dotted", linewidth=1.5, color="red")
             axs[i, j].set_xticks([])
             axs[i, j].set_yticks([])
         
