@@ -15,6 +15,7 @@ ax.tick_params(axis='both', labelsize = 25)
 ax.set_xlabel("Coordinate", fontsize = 25)
 ax.set_ylabel("Coordinate Value", fontsize = 25)
 ax.yaxis.set_ticks(np.arange(0, 3.1, 1))
-plt.title(label = "Parallel Coordinate Plot", 
+plt.title(label = "Parallel Coordinates Plot", 
           fontsize = 30, fontweight = "bold", pad = 15)
-
+ax.grid(False)
+plt.show()
