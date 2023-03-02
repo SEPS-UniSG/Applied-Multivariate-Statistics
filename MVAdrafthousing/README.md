@@ -2,7 +2,7 @@
 Plots the scatterplot matrix for Boston housing data.
 
 ```python
-#works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.6.2
+#works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.7.0
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -22,16 +22,16 @@ for i in range(6):
         if i == j:
             axs[i,j].boxplot([df.loc[df["name"] == 1,i+1], df.loc[df["name"] == 2,i+1]],
                              widths = 0.6, medianprops = dict(color="black",linewidth=1.8))
-            axs[i, j].plot([0.7, 1.3], [df[i+1].mean(),df[i+1].mean()], linestyle="dotted", linewidth=1.5, color="red")
-            axs[i, j].plot([1.7, 2.3], [df[i+1].mean(),df[i+1].mean()], linestyle="dotted", linewidth=1.5, color="red")
+            axs[i, j].plot([0.7, 1.3], [df.loc[df["name"] == 1, i+1].mean(), df.loc[df["name"] == 1, i+1].mean()], linestyle="dotted", linewidth=1.5, color="red")
+            axs[i, j].plot([1.7, 2.3], [df.loc[df["name"] == 1, i+1].mean(), df.loc[df["name"] == 1, i+1].mean()], linestyle="dotted", linewidth=1.5, color="red")
             axs[i, j].set_xticks([])
             axs[i, j].set_yticks([])
         
         if i > j:    
             axs[i,j].scatter(df.loc[df["name"] == 1,j+1],df.loc[df["name"] == 1,i+1], 
-                             color = "black", alpha = 0.7)
+                             alpha = 0.7, facecolors='none', edgecolors='k')
             axs[i,j].scatter(df.loc[df["name"] == 2,j+1],df.loc[df["name"] == 2,i+1], 
-                             color = "red", alpha = 0.7)
+                             alpha = 0.7, facecolors='none', edgecolors='r')
             axs[i, j].set_xticks([])
             axs[i, j].set_yticks([])
         
