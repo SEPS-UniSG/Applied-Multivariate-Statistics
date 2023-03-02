@@ -33,7 +33,7 @@ plt.legend([mlines.Line2D([], [], color="red", label= "US", linestyle= "dashed")
             mlines.Line2D([], [], color="blue", label= "Europe", linestyle= "dashed")],
            ["US","Japan","Europe"], loc="lower center", 
            ncol=3, bbox_to_anchor=(0.5, -0.2), fontsize=25)
-plt.show
+plt.show()
 
 ```
 ![MVApcp1](MVApcp1_python.png)
