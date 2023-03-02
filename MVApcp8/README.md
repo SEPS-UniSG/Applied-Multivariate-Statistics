@@ -33,4 +33,4 @@ ax.set_title("Parallel Coordinates Plot with Cubic Spline",fontsize = 30, fontwe
 plt.show()
 
 ```
-![MVApcp8](MVApcp8_python.png)
+![MVApcp8](MVApcp8-python.png)
