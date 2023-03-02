@@ -26,5 +26,5 @@ plt.title(label = "Parallel Coordinates Plot(Car Data)",
           fontsize = 30, fontweight = "bold", pad = 15)
 plt.show()
 ```
-![MVApcp3](MVApcp3_python.png)
+![MVApcp3](MVApcp3-python.png)
 
