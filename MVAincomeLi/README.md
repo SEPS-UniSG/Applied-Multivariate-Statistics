@@ -1,5 +1,5 @@
 # MVAincomeLi
-Hexagon plot between Age and Time for computer per week.
+Hexagon plot between Income and Flat size.
 
 ```python
 #works on pandas 1.5.2 and matplotlib 3.6.2

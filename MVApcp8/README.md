@@ -2,7 +2,7 @@
 Computes parallel coordinates plot with cubic spline interpolation.
 
 ```python
-#works on numpy 1.23.5, matplotlib 3.6.2 and scipy 1.9.3
+# tested under numpy 1.23.5, matplotlib 3.7.0 and scipy 1.10.0
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import CubicSpline
@@ -21,13 +21,8 @@ fig, ax = plt.subplots(figsize = (12,10))
 ax.plot(x1, y1, lw=2)
 ax.plot(x2, y2, lw=2, color="red")
 
-ax.scatter(1,0)
-ax.scatter(1,3)
-ax.scatter(2,2)
-ax.scatter(3,2)
-ax.scatter(3,3)
-ax.scatter(4,1)
-ax.scatter(4,2)
+ax.scatter([1, 1, 2, 3, 3, 4, 4], [0, 3, 2, 2, 3, 1, 2], 
+           c = "w", edgecolors = "k", s = 50)
 
 ax.yaxis.set_ticks(np.arange(0, 3.1, 1))
 ax.xaxis.set_ticks(np.arange(1, 4.1, 1))
@@ -38,4 +33,4 @@ ax.set_title("Parallel Coordinates Plot with Cubic Spline",fontsize = 30, fontwe
 plt.show()
 
 ```
-![MVApcp8](MVApcp8_python.png)
+![MVApcp8](MVApcp8-python.png)

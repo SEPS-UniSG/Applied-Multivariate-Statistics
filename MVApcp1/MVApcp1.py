@@ -1,4 +1,4 @@
-#works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.6.2
+#works on pandas 1.5.2, numpy 1.23.5 and matplotlib 3.7.0
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -21,7 +21,7 @@ parallel_coordinates(df, "name", linewidth ="0.9", color = ("red","blue","black"
                      linestyle= "dashed", alpha = 0.8)
 ax.tick_params(axis='both', labelsize=25)
 ax.grid(False)
-plt.title(label = "Parallel Coordinate Plot(Car Data)", 
+plt.title(label = "Parallel Coordinates Plot(Car Data)", 
           fontsize = 30, fontweight = "bold", pad = 15)
 
 plt.legend([mlines.Line2D([], [], color="red", label= "US", linestyle= "dashed"),
@@ -29,4 +29,4 @@ plt.legend([mlines.Line2D([], [], color="red", label= "US", linestyle= "dashed")
             mlines.Line2D([], [], color="blue", label= "Europe", linestyle= "dashed")],
            ["US","Japan","Europe"], loc="lower center", 
            ncol=3, bbox_to_anchor=(0.5, -0.2), fontsize=25)
-plt.show
+plt.show()

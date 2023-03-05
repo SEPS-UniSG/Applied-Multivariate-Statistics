@@ -11,14 +11,14 @@ for i in df.columns:
     df[i] = (df[i]-np.min(df[i])) / np.ptp(df[i])
 
 df.rename(columns={1:"mileage", 7:"weight"}, inplace=True)
-df["name"] = "Parallel Coordinate Plot(Car Data)"
+df["name"] = "Parallel Coordinates Plot(Car Data)"
 
 fig, ax = plt.subplots(figsize = (10,10))
 
 parallel_coordinates(df, "name", color=("black"), linewidth ="0.9")
 plt.legend().set_visible(False)
 ax.tick_params(axis='both', labelsize=25)
-plt.title(label = "Parallel Coordinate Plot(Car Data)", 
+plt.title(label = "Parallel Coordinates Plot(Car Data)", 
           fontsize = 30, fontweight = "bold", pad = 15)
-
+plt.show()
 
