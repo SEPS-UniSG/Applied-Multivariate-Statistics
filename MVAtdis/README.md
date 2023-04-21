@@ -46,5 +46,5 @@ fig2.legend(fontsize=18, loc =(0.79, 0.45))
 plt.tight_layout()
 plt.show()
 ```
-![MVAtdis](MVAtdis01-python.png)
+![MVAtdis](MVAtdis01_python.png)
 ![MVAtdis](MVAtdis02_python.png)
