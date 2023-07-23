@@ -1,3 +1,7 @@
+# MVAboshousing
+Computes the ANCOVA model with Boston housing data. We add binary variable to the ANCOVA model, and try to check the effect of the new factors on the dependent variable.
+
+```python
 #works on pandas 2.0.3 and statsmodels 0.14.0
 import pandas as pd
 from statsmodels.formula.api import ols
@@ -16,3 +20,4 @@ print(lm2.summary())
 
 lm3 = ols(formula = "X14 ~ X4 + X5 + X6 + X8 + X10 + X11 + X12 + X13 + X15 + X4*X12 + X4*X15", data = df).fit()
 print(lm3.summary())
+```

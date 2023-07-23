@@ -1,3 +1,7 @@
+# MVAcareffect
+Computes a linear regression of mileage on weight and displacement for car data set
+
+```python
 #works on pandas 2.0.3, numpy 1.25.0, matplotlib 3.7.2 and statsmodels 0.14.0
 import pandas as pd
 import numpy as np
@@ -46,3 +50,6 @@ ax.set_xlabel("log(Weight)")
 ax.set_ylabel("log(Mileage)")
 fig.legend(loc=(0.75,0.73))
 plt.show()
+
+```
+![MVAcareffect](MVAcareffect_python.png)
