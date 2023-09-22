@@ -1,5 +1,5 @@
 # MVAbankrupt
-Computes the effects of financial characteristics on bankrupt with logit model.
+Computes probabilities of bankruptcies as a function of 5 financial characteristics of banks with the logit model.
 
 ```python
 #works on pandas 1.5.3 and statsmodels 0.14.0
