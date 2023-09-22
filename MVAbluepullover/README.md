@@ -13,7 +13,7 @@ mu = np.transpose(mu)
 print("mu =", mu)
 s_unbiased = np.cov(blue_data, rowvar=False, ddof=1) # unbiased estimate of covariance matrix
 covxy = s_unbiased / (10/9) # calculating covariance using the formula n/n-1*S
-print("covxy =", covxy)
+print("cov_xy =", covxy)
 
 xdata = blue_data.iloc[:, :2]
 zdata = blue_data.iloc[:, 2:]
@@ -22,9 +22,9 @@ Sxz = np.cov(xdata, zdata, rowvar=False)[0:2,2:4]
 Szz = np.cov(zdata, rowvar=False)
 Sxx_z = Sxx - np.dot(Sxz, np.dot(np.linalg.inv(Szz), Sxz.T))
 rxx_z = Sxx_z[0, 1]/np.sqrt(Sxx_z[0, 0]*Sxx_z[1, 1]) # calculating correlation using formula r = cov/(std_dev1 * std_dev2)
-print("rxx_z =", rxx_z)
+print("rxx_z =", np.round(rxx_z, 3))
 
 # correlation matrix
 P_blue_data = np.corrcoef(blue_data, rowvar=False)
-print("P_blue_data =\n", P_blue_data)
+print("P_blue_data =\n", np.round(P_blue_data, 3))
 ```
