@@ -1,5 +1,5 @@
 # MVAcontnorm
-Computes a scatterplot of a normal sample and the contour ellipses for mu =(3,2) and
+Produces a scatterplot of a normal sample and the contour ellipses for mu = (3,2) and
 sigma = (1,-1.5)~(-1.5,4).
 
 ```python
