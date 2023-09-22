@@ -1,5 +1,5 @@
 # MVAcorrnorm
-Computes a two dimensional scatterplot of two correlated normal random variables.
+Produces a scatterplot for a sample of two correlated normal random variables with sample size n = 150, rho = 0.8.
 
 
 ```python
