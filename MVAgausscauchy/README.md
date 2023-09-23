@@ -26,7 +26,7 @@ ax.axvline(x=2, color='black')
 ax.text(-1.95, 0.36, '-2f', fontsize = 18)
 ax.text(-0.95, 0.36, '-1f', fontsize = 18)
 ax.text(1.05, 0.36, '1f', fontsize = 18)
-ax.text(2.05, 0.36, '-2f', fontsize = 18)
+ax.text(2.05, 0.36, '2f', fontsize = 18)
 
 ax.legend(['Cauchy', 'Gauss'], loc='upper right', fontsize=20)
 ax.set_title('Distribution Comparison', fontsize=25)
