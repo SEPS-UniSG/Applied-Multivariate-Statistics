@@ -1,6 +1,7 @@
 # MVAedfnormal
 Draws n observations from a standard normal distribution and plots its empirical
-distribution function (edf) vs. the normal cumulative distribution function (cdf).
+distribution function (edf) vs. the normal cumulative distribution function (cdf) for
+n = 100 and n = 1000.
 
 ```python
 # works on numpy 1.24.3, scipy 1.10.1, statsmodels 0.14.0 and matplotlib 3.6.2
