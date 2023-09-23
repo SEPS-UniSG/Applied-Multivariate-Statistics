@@ -1,6 +1,5 @@
 # MVAghcontour
-Gives contour plots of Gumbel-Hougard copula for different theta values (1, 2, 3,
-10, 30 and 100).
+Produces contour plots of Gumbel-Hougard copula for different theta values (1, 2, 3, 10, 30 and 100).
 
 ```python
 # works on numpy 1.23.5 and matplotlib 3.6.2
