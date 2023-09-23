@@ -1,6 +1,5 @@
 # MVAghadatail
-Plots four probability density functions and four tails in comparison of the NIG,
-the Laplace, the Cauchy and the Gauss distribution.
+Plots probability density functions and tails of the NIG, Laplace, Cauchy and standard normal distributions.
 
 ```python
 # works on numpy 1.23.5, matplotlib 3.6.2 and scipy 1.10.0
