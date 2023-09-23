@@ -28,4 +28,4 @@ table = pd.DataFrame({'β-hat': model.params,
                       'p-value': model.pvalues})
 
 table.index = ['Constant'] + [f'X{i}' for i in [4,5,6,8,9,10,11,12,13]]
-print(table)
+print(np.round(table, 4))
