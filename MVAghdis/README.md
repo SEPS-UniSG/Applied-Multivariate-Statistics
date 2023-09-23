@@ -1,6 +1,5 @@
 # MVAghdis
-Plots three probability density functions and three cumulative density functions of
-the GH, Hyperbolic and NIG distributions.
+Plots probability density functions and cumulative distribution functions of the GH, Hyperbolic and NIG distributions.
 
 ```python
 # works on numpy 1.23.5, matplotlib 3.6.2 and scipy 1.10.0
