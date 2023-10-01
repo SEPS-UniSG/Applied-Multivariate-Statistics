@@ -33,6 +33,6 @@ sigma = T * (9 /10)
 test = 15 * np.sum(np.diag(np.linalg.solve(sigma, s))) - 15 * np.log10(np.linalg.det(np.linalg.solve(sigma, s))) - 15 * 2
 p = 1 - chi2.cdf(test, 3)
 
-print("Test Statistic = ", test)
-print("p-value = ", p)
+print("Test Statistic = ", np.round(test, 3))
+print("p-value = ", np.round(p, 3))
 ```
