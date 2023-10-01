@@ -25,14 +25,14 @@ for i in range(n1):
 
 fig, ax = plt.subplots(1,1, figsize = (10,10), subplot_kw=dict(projection='3d'))
 
-x2, x1 = np.meshgrid(x2, x1)
-ax.plot_surface(x2, x1, L, cmap='viridis')
-ax.set_xlabel('X2', fontsize = 15)
-ax.set_ylabel('X1', fontsize = 15)
+x1, x2 = np.meshgrid(x1, x2)
+ax.plot_surface(x1, x2, L, cmap='viridis')
+ax.set_xlabel('X1', fontsize = 15)
+ax.set_ylabel('X2', fontsize = 15)
 ax.set_zlabel('Y', fontsize = 15)
 ax.set_title('3-D Response Surface', fontsize = 22, y = 0.96)
 ax.tick_params(labelsize=12)
-ax.view_init(20, 70)
+ax.view_init(20, -110)
 plt.show()
 
 # Contour plot
