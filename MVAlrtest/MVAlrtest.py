@@ -34,8 +34,8 @@ ft = ((n - p) / q) * ft1 / ft2
 # Probability to reject hypothesis
 p_value_f = 1 - f.cdf(ft, q, n - p)
 
-print("Constrained MLE (bc):", bc)
-print("LR test statistic:", lrt)
-print("Probability to reject hypothesis (chi-square test):", p_value_chi2)
-print("F test statistic:", ft)
-print("Probability to reject hypothesis (F test):", p_value_f)
+print("Constrained MLE (bc):", np.round(bc, 3))
+print("LR test statistic:", np.round(lrt, 3))
+print("Probability to reject hypothesis (chi-square test):", np.round(p_value_chi2, 3))
+print("F test statistic:", np.round(ft, 3))
+print("Probability to reject hypothesis (F test):",  np.round(p_value_f, 3))
