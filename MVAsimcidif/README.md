@@ -16,10 +16,10 @@ exE = np.mean(yE.iloc[:, 1:3], axis=0)
 exM = np.mean(yM.iloc[:, 1:3], axis=0)
 
 print("Mean group Energy of assets (V2) and sales (V3)")
-print(exE)
+print(np.round(exE, 3))
 
 print("Mean group Manufacturing of assets (V2) and sales (V3)")
-print(exM)
+print(np.round(exM, 3))
 
 # Estimating variance of the groups observations within the groups and overall
 nE = len(yE)
@@ -37,10 +37,10 @@ k = nE * nM * (n - p - 1) / (p * (n**2))
 # Computing the test statistic
 f_value = k * np.dot(np.dot((exE - exM).T, sinv), (exE - exM))
 
-print("Test statistic (f-value):", f_value)
+print("Test statistic (f-value):", np.round(f_value, 3))
 
 crit_value = f.ppf(1 - 0.05, p, n - p - 1)
-print("Critical value:", crit_value)
+print("Critical value:", np.round(crit_value, 3))
 
 # Computes the simultaneous confidence intervals
 deltau = (exE - exM) + np.sqrt(f.ppf(1 - 0.05, p, n - p - 1) * (1 / k) * np.diag(s))
@@ -49,5 +49,5 @@ deltal = (exE - exM) - np.sqrt(f.ppf(1 - 0.05, p, n - p - 1) * (1 / k) * np.diag
 confit = np.column_stack((deltal, deltau))
 
 print("Simultaneous confidence intervals:")
-print(confit)
+print(np.round(confit, 3))
 ```
