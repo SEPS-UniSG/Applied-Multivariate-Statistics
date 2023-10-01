@@ -34,12 +34,12 @@ k = n1 * n2 * (n - p - 1) / (p * (n**2))
 # Computing the test statistic
 f_statistic = k * np.dot(np.dot((ex1 - ex2).T, sinv), (ex1 - ex2))
 print("F-statistic")
-print(f_statistic)
+print(np.round(f_statistic, 3))
 
 # Computing the critical value
 crit_value = f.ppf(0.95, p, n - p - 1)
 print("Critical value")
-print(crit_value)
+print(np.round(crit_value, 3))
 
 # Computing the simultaneous confidence intervals
 
@@ -49,4 +49,4 @@ deltal = (ex1 - ex2) - np.sqrt(f.ppf(0.95, p, n - p - 1) * (1 / k) * np.diag(s))
 confint = np.column_stack((deltal, deltau))
 
 print("Simultaneous confidence intervals")
-print(confint)
+print(np.round(confint, 4))
