@@ -40,7 +40,7 @@ plt.title('PCA embedding')
 plt.show()
 
 # t-SNE on 2-dimensions
-tsne = manifold.TSNE(n_components=2, perplexity=25, random_state=42)
+tsne = manifold.TSNE(n_components=2, perplexity=25, random_state=42, init='random', learning_rate=200)
 tsne.fit(X)
 tsne_X = tsne.fit_transform(X)
 fig = plt.figure(figsize=(8, 6))
