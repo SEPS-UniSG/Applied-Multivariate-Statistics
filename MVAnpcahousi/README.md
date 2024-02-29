@@ -1,8 +1,9 @@
 # MVAnpcahousi
-Illustrates the PAV algorithm for nonmetric MDS for car marks data.
+Calculates and plots the correlations of the first three PCs with the original
+variables for the Standardized Boston housing data.
 
 ```python
-#works on numpy 1.25.2, pandas 2.1.1, 3.8.0
+#works on numpy 1.25.2, pandas 2.1.1 and matplotlib 3.8.0
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
