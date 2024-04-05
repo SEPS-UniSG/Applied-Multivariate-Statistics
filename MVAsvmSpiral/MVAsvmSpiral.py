@@ -1,3 +1,4 @@
+# Works on matplotlib 3.7.1, numpy 1.24.2, scikit-learn 1.3.1, scipy 1.11.3
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy.linalg import inv

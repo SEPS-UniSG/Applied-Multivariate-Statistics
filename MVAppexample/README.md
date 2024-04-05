@@ -3,6 +3,7 @@ Reads the Swiss banknote data and spheres them to run Exploratory Projection Pur
 
 ```python
 
+# Works on pandas 2.0.0, numpy 1.24.2, scipy 1.11.3, scikit-learn 1.3.1, matplotlib 3.7.1
 import pandas as pd
 import numpy as np
 from numpy.random import normal, uniform

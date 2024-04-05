@@ -3,6 +3,7 @@ Shows monthly returns of six US firms from Jan 2000 to Dec 2009.
 
 ```python
 
+# Works on pandas 2.0.0, matplotlib 3.7.1
 import pandas as pd
 import matplotlib.pyplot as plt
 

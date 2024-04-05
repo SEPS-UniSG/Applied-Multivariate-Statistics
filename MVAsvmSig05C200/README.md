@@ -2,6 +2,7 @@
 Plots an SVM classification plot of bankruptcy data set with sigma = 0.5 (gamma = 300) and C = 200
 ```python
 
+# Works on pandas 2.0.0, numpy 1.24.2, matplotlib 3.7.1, scikit-learn 1.3.1
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

@@ -1,3 +1,4 @@
+# Works on numpy 1.24.2, matplotlib 3.7.1
 import numpy as np
 from numpy import linalg
 import matplotlib.pyplot as plt 

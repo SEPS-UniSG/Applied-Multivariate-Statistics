@@ -1,3 +1,4 @@
+# Works on pandas 2.0.0, scikit-learn 1.3.1, matplotlib 3.7.1
 import pandas as pd
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 import matplotlib.pyplot as plt

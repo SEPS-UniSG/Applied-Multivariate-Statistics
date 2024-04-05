@@ -1,3 +1,4 @@
+# Works on pandas 2.0.0, matplotlib 3.7.1
 import pandas as pd
 import matplotlib.pyplot as plt
 
