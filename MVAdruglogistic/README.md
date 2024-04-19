@@ -1,3 +1,9 @@
+# MVAdruglogistic
+Calculates and plots the odds-ratios of the probability of taking drugs in a logit
+model for a gender-age group combination and tests two models (one without a curvature and more
+general model with a curvature term).
+
+```python
 #works on numpy 1.25.2, scipy 1.11.2 and matplotlib 3.8.0
 import numpy as np
 import scipy.optimize as opt
@@ -146,3 +152,6 @@ overallG2 = G2-GG2
 print("G2:", round(overallG2,4))
 pvaloG2 = 1 - stats.chi2.cdf(overallG2, df-df2)
 print("p-value G2:", round(pvaloG2,4))
+```
+![MVAdruglogistic](MVAdruglogistic-1_python.png)
+![MVAdruglogistic](MVAdruglogistic-2_python.png)
