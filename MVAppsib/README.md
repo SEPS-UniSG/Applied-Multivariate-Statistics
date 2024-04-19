@@ -188,5 +188,58 @@ for idx, val in enumerate(inde['cind']):
 plt.tight_layout()
 plt.show()
 
+# same but with transformed data
+xt = x_drop.copy()
+for i in [0, 2, 4, 5, 7, 8, 9, 13]:
+    xt[i] = np.log(x_drop[i])
+
+xt[1] = x_drop[1]/10
+xt[6] = (x_drop[6]**2.5)/10000
+xt[10] = np.exp(0.4 * x_drop[10])/1000
+xt[11] = (x_drop[11])/100
+xt[12] = np.sqrt(x_drop[12])
+
+x_transformed = sphere(xt)
+
+h = 2.62 * len(x_transformed) ** (-1/5) # Calculate the bandwidth
+n = 50 # Set the number of projections
+
+inde = ppexample(x_transformed, h, n)
+
+# Plotting
+fig, axs = plt.subplots(2, 1, gridspec_kw={'height_ratios': [3, 1]}, figsize=(9, 7))
+
+# First subplot
+ax = axs[0]
+ax.scatter(inde['xa'][:100, 0], inde['xa'][:100, 1], facecolors='none', edgecolors='r', marker='o', s=20)  # Red hollow circles for 'xa'
+ax.scatter(inde['xa'][100:, 0], inde['xa'][100:, 1], facecolors='none', edgecolors='r', marker='^', s=20)  # Red hollow triangles for 'xa'
+ax.scatter(inde['xi'][:100, 0], inde['xi'][:100, 1], facecolors='none', edgecolors='b', marker='o', s=20)  # Blue hollow circles for 'xi'
+ax.scatter(inde['xi'][100:, 0], inde['xi'][100:, 1], facecolors='none', edgecolors='b', marker='^', s=20)  # Blue hollow triangles for 'xi'
+# Plot density lines
+ax.plot(inde['fi'][:, 0], inde['fi'][:, 1], 'b-', linewidth=2)  # Blue line for 'fi' density
+ax.plot(inde['fa'][:, 0], inde['fa'][:, 1], 'r-', linewidth=2)  # Red line for 'fa' density
+# Plot standard normal density in green
+ax.plot(np.linspace(-4, 4, 100), scipy_norm.pdf(np.linspace(-4, 4, 100)), 'g-', linewidth=2) 
+
+ax.set_xlim(-4, 4)
+ax.set_ylim(-0.2, max(np.max(inde['fi'][:, 1]), np.max(inde['fa'][:, 1])))
+ax.set_xlabel('X')
+ax.set_ylabel('Y')
+ax.set_title('50 directions')
+
+# Second subplot
+ax = axs[1]
+ax.plot(inde['pind'][:, 0], inde['pind'][:, 1], 'ko', markerfacecolor='none')
+for idx, val in enumerate(inde['cind']):
+    if val == 4:
+        ax.plot(inde['pind'][idx, 0], inde['pind'][idx, 1], 'ro', markerfacecolor='none')  # Red
+    elif val == 1:
+        ax.plot(inde['pind'][idx, 0], inde['pind'][idx, 1], 'bo', markerfacecolor='none')  # Blue
+    elif val == 2:
+        ax.plot(inde['pind'][idx, 0], inde['pind'][idx, 1], 'go', markerfacecolor='none')  # Green
+
+plt.tight_layout()
+plt.show()
+
 ```
 ![MVAppsib](MVAppsib_python.png)
