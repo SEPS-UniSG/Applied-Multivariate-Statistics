@@ -19,7 +19,7 @@ fig, ax = plt.subplots(figsize=(8, 6))
 ax.plot([0,0],[-0.6,0.6], color='grey', alpha=0.5)
 ax.plot([-1,0.6],[0,0], color='grey', alpha=0.5)
 ax.set_xlim(-0.17, 0.12)
-ax.set_ylim(-0.1, 0.1)
+ax.set_ylim(-0.11, 0.1)
 ax.scatter(w[:,0], w[:,1])
 [ax.annotate(name, (w[i, 0], w[i, 1])) for i, name in enumerate(labels)]
 ax.set_title('Time Budget Data')
