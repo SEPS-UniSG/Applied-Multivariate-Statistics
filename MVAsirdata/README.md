@@ -121,7 +121,7 @@ m2 = m2[m2[:, 0].argsort()]
 
 sg = sum(g)
 g2 = g / sg
-psi = np.array([g2[0], g2[0] + g2[1], g2[0] + g2[1] + g2[2]])
+psi = np.cumsum(g2)
 
 # Compute projections
 p11 = np.column_stack((x @ f[:, 0], y))
@@ -158,7 +158,7 @@ ax3.set_title("XBeta2 vs Response", fontweight='bold')
 # Fourth subplot (Scree plot)
 ax4 = fig.add_subplot(224)
 i = np.array([1, 2, 3])
-ax4.plot(i, g, '*', color='k', label='Eigenvalues')
+ax4.plot(i, g2, '*', color='k', label='Eigenvalues')
 ax4.plot(i, psi, 'o', color='b', label='Cumulative Sum')
 ax4.set_xlabel("K")
 ax4.set_ylabel("Psi(k) Eigenvalues")
