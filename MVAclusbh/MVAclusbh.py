@@ -7,27 +7,29 @@ import matplotlib.pyplot as plt
 data = pd.read_csv("bostonh.dat", sep = "\s+", header=None)
 
 # transform data
-xt = data
-for i in [0, 2, 4, 5, 7, 8, 9, 13]:
-    xt.iloc[:, i] = np.log(data.iloc[:, i])
-    
-xt.iloc[:, 1] = data.iloc[:, 1]/10
-xt.iloc[:, 6] = (data.iloc[:, 6]**(2.5))/10000
-xt.iloc[:, 10] = np.exp(0.4 * data.iloc[:, 10])/1000
-xt.iloc[:, 11] = data.iloc[:, 11]/100
-xt.iloc[:, 12] = np.sqrt(data.iloc[:, 12])
+xt = pd.DataFrame({
+    0: np.log(data.iloc[:, 0]),
+    1: data.iloc[:, 1] / 10,
+    2: np.log(data.iloc[:, 2]),
+    3: data.iloc[:, 3],
+    4: np.log(data.iloc[:, 4]),
+    5: np.log(data.iloc[:, 5]),
+    6: (data.iloc[:, 6]**2.5) / 10000,
+    7: np.log(data.iloc[:, 7]),
+    8: np.log(data.iloc[:, 8]),
+    9: np.log(data.iloc[:, 9]),
+    10: np.exp(0.4 * data.iloc[:, 10]) / 1000,
+    11: data.iloc[:, 11] / 100,
+    12: np.sqrt(data.iloc[:, 12]),
+    13: np.log(data.iloc[:, 13])
+})
+
 data = xt.drop(3, axis = 1)
 
 da = (data - np.mean(data))/np.std(data, ddof = 1)
-d = np.zeros([len(da),len(da)])
+d = np.linalg.norm(da.values[:, np.newaxis] - da.values, axis = 2)
 
-for i in range(0, len(da)):
-    for j in range(0, len(da)):
-        d[i, j] = np.linalg.norm(da.iloc[i, :] - da.iloc[j, :])
-
-ddd  = d[1:, :-1][:, 0]
-for i in range(1, len(da)-1):
-    ddd = np.concatenate((ddd, d[1:, :-1][i:, i]))
+ddd = np.hstack([d[i+1:, i] for i in range(len(da)-1)])
 
 w = hierarchy.linkage(ddd, 'ward')
 tree = hierarchy.cut_tree(w, n_clusters = 2)
