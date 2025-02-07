@@ -51,7 +51,7 @@ def plot_clusters(points, centers, labels, title, connect_centers=True):
 
 # K-Means Clustering
 initial_centers_kmeans = np.array([[-3, 0], [4, -3]])
-kmeans = KMeans(n_clusters=2, init=initial_centers_kmeans, n_init=1, random_state=100)
+kmeans = KMeans(n_clusters=2, init=initial_centers_kmeans, algorithm = "lloyd", random_state=100)
 kmeans.fit(eight)
 plot_clusters(eight, kmeans.cluster_centers_, kmeans.labels_, "8 points - k-means clustering")
 
